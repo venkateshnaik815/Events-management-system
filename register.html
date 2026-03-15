@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - Upgrad Virtual Event Management System</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Upgrad Events</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <h2 class="fw-bold mb-4">Event Registration</h2>
+        
+        <div class="row">
+            <div class="col-12">
+                <!-- Event Details Section -->
+                <div class="section-box">
+                    <h5 class="fw-bold mb-3">Event Details</h5>
+                    <div id="eventDetails">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Participant Details Section -->
+                <div class="section-box">
+                    <h5 class="fw-bold mb-3">Participant Details</h5>
+                    <form id="registrationForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="firstName" placeholder="Shoaib" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="lastName" placeholder="Ghachi" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="registerEmail" placeholder="shoaib.ghachi@gmail.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-success px-4">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
